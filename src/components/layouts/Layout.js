@@ -19,11 +19,11 @@ const Layout = ({children, className, ...properties}) => {
                         <nav>
                             <ul className={'flex gap-6 justify-center'}>
                                 <li>
-                                    <a href="">Home</a>
+                                    <a href={"../../pages/Home"}>Home</a>
                                 </li>
 
                                 <li>
-                                    <a href="">Learning outcomes</a>
+                                    <a href={"../../pages/LO"}>Learning outcomes</a>
                                 </li>
                             </ul>
                         </nav>

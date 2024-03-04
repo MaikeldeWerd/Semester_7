@@ -1,16 +1,14 @@
 import Layout from "../components/layouts/Layout";
 import Container from "../components/layouts/Container";
 
-const Home = () => {
+const LO = () => {
   return (
     <Layout>
       <Container>
-        <div>
-          <p>test</p>
-        </div>
+
       </Container>
     </Layout>
   );
 }
 
-export default Home;
+export default LO;
