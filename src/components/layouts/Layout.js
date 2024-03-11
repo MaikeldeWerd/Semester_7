@@ -21,6 +21,8 @@ const Layout = ({children, className, ...properties}) => {
                             <div className={'flex gap-6 justify-center'}>
                                 <Link href={"/"}>Home</Link>
 
+                                <Link href={"Projects"}>Projects</Link>
+
                                 <Link href={"LearningOutcomes"}>Learning outcomes</Link>
                             </div>
                         </nav>

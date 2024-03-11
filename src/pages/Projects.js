@@ -5,17 +5,18 @@ import LearningOutcomesConfig from "@/configs/LearningOutcomesConfig";
 import Link from "next/link";
 import LearningOutcomesTabs from "@/components/tabs/LearningOutcomesTabs";
 import {useEffect, useState} from "react";
+import ProjectTabs from "@/components/tabs/ProjectTabs";
 
-const LearningOutcomes = () => {
-    const [outcomeNav, setOutcomeNav] = useState(0);
+const Projects = () => {
+    const [projectNav, setProjectNav] = useState(0);
 
     return (
         <Layout>
             <Container>
-                <LearningOutcomesTabs outcomeNav={outcomeNav} setOutcomeNav={setOutcomeNav} />
+                <ProjectTabs projectNav={projectNav} setProjectNav={setProjectNav} />
 
                 <div className={'grid grid-cols-3 gap-10'}>
-                    {LearningOutcomesConfig?.outcomes?.filter(outcome => outcomeNav === 0 || outcome.lo_index === outcomeNav)?.map((outcome, outcomeIdx) => {
+                    {LearningOutcomesConfig?.outcomes?.filter(outcome => projectNav === 0 || outcome.project_index === projectNav)?.map((outcome, outcomeIdx) => {
                         return (
                             <Link href={outcome.route}>
                                 <Panel key={outcomeIdx}>
@@ -40,4 +41,4 @@ const LearningOutcomes = () => {
     );
 }
 
-export default LearningOutcomes;
+export default Projects;
