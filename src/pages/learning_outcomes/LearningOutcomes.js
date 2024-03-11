@@ -3,11 +3,14 @@ import Container from "@/components/layouts/Container";
 import Panel from "@/components/panels/Panel";
 import LearningOutcomesConfig from "@/configs/LearningOutcomesConfig";
 import Link from "next/link";
+import LearningOutcomesTabs from "@/components/tabs/LearningOutcomesTabs";
 
 const LearningOutcomes = () => {
     return (
         <Layout>
             <Container>
+                <LearningOutcomesTabs />
+
                 <div className={'grid grid-cols-3 gap-10'}>
                     {LearningOutcomesConfig?.outcomes?.map((outcome, outcomeIdx) => {
                         return (
