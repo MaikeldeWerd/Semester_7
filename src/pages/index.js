@@ -2,6 +2,7 @@ import Layout from "@/components/layouts/Layout";
 import Container from "@/components/layouts/Container";
 import Panel from "@/components/panels/Panel";
 import Button from "@/components/buttons/Button";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -21,9 +22,11 @@ const Home = () => {
                     nemo nostrum officia quam quas quibusdam saepe ullam ut!</p>
                 </div>
 
-                <Button>
-                  <span>See my work</span>
-                </Button>
+                <Link href={'learning_outcomes/LearningOutcomes'}>
+                  <Button>
+                    <span>See my work</span>
+                  </Button>
+                </Link>
               </div>
             </div>
 
