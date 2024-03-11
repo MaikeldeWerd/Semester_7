@@ -1,13 +1,7 @@
 import Tabs from "@/components/tabs/Tabs";
 import {useCallback, useEffect, useState} from "react";
 
-const LearningOutcomesTabs = ({}) => {
-    const [outcomeNav, setOutcomeNav] = useState(0);
-
-    useEffect(() => {
-        console.log(outcomeNav);
-    }, [outcomeNav]);
-
+const LearningOutcomesTabs = ({ outcomeNav, setOutcomeNav }) => {
     const handleLearningOutcomeNavigationClick = useCallback((outcomeNav) => {
         setOutcomeNav(outcomeNav);
     },[outcomeNav]);

@@ -5,6 +5,7 @@ const LearningOutcomesConfig = {
         {
             title: 'test',
             sub_title: 'Learning outcome 1',
+            index: 1,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consequatur consequuntur dignissimos, excepturi facilis hic ipsa, iure neque nihil nisi odio provident quam quis rem reprehenderit similique tempore totam.',
             image: {image},
             route: '',
@@ -12,6 +13,7 @@ const LearningOutcomesConfig = {
         {
             title: 'test',
             sub_title: 'Learning outcome 2',
+            index: 2,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consequatur consequuntur dignissimos, excepturi facilis hic ipsa, iure neque nihil nisi odio provident quam quis rem reprehenderit similique tempore totam.',
             image: {image},
             route: '',
@@ -19,6 +21,7 @@ const LearningOutcomesConfig = {
         {
             title: 'test',
             sub_title: 'Learning outcome 3',
+            index: 3,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consequatur consequuntur dignissimos, excepturi facilis hic ipsa, iure neque nihil nisi odio provident quam quis rem reprehenderit similique tempore totam.',
             image: {image},
             route: '',

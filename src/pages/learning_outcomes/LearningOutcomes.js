@@ -4,15 +4,22 @@ import Panel from "@/components/panels/Panel";
 import LearningOutcomesConfig from "@/configs/LearningOutcomesConfig";
 import Link from "next/link";
 import LearningOutcomesTabs from "@/components/tabs/LearningOutcomesTabs";
+import {useEffect, useState} from "react";
 
 const LearningOutcomes = () => {
+    const [outcomeNav, setOutcomeNav] = useState(0);
+
+    useEffect(() => {
+        console.log(outcomeNav);
+    }, [outcomeNav]);
+
     return (
         <Layout>
             <Container>
-                <LearningOutcomesTabs />
+                <LearningOutcomesTabs outcomeNav={outcomeNav} setOutcomeNav={setOutcomeNav} />
 
                 <div className={'grid grid-cols-3 gap-10'}>
-                    {LearningOutcomesConfig?.outcomes?.map((outcome, outcomeIdx) => {
+                    {LearningOutcomesConfig?.outcomes?.filter(outcome => outcomeNav === 0 || outcome.index === outcomeNav)?.map((outcome, outcomeIdx) => {
                         return (
                             <Link href={outcome.route}>
                                 <Panel key={outcomeIdx}>
