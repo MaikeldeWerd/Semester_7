@@ -22,11 +22,19 @@ const Home = () => {
                     nemo nostrum officia quam quas quibusdam saepe ullam ut!</p>
                 </div>
 
-                <Link href={'learning_outcomes/LearningOutcomes'}>
-                  <Button>
-                    <span>See my work</span>
-                  </Button>
-                </Link>
+                <div className={'flex gap-10'}>
+                  <Link href={'Projects'}>
+                    <Button>
+                      <span>See my work</span>
+                    </Button>
+                  </Link>
+
+                  <Link href={'LearningOutcomes'}>
+                    <Button>
+                      <span>See the learning outcomes</span>
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
 
