@@ -9,10 +9,6 @@ import {useEffect, useState} from "react";
 const LearningOutcomes = () => {
     const [outcomeNav, setOutcomeNav] = useState(0);
 
-    useEffect(() => {
-        console.log(outcomeNav);
-    }, [outcomeNav]);
-
     return (
         <Layout>
             <Container>
