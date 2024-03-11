@@ -9,7 +9,7 @@ const Layout = ({children, className, ...properties}) => {
     const fullYear = date.getFullYear();
 
     return (
-        <div className={twMerge('flex flex-col h-screen bg-black', className)} {...properties}>
+        <div className={twMerge('flex flex-col min-h-screen bg-black', className)} {...properties}>
             <header className={'p-10'}>
                 <Panel>
                     <div className={'grid grid-cols-3 gap-10 items-center w-full'}>
