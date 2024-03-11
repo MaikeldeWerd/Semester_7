@@ -17,8 +17,8 @@ const LearningOutcomes = () => {
                 <div className={'grid grid-cols-3 gap-10'}>
                     {LearningOutcomesConfig?.outcomes?.filter(outcome => outcomeNav === 0 || outcome.lo_index === outcomeNav)?.map((outcome, outcomeIdx) => {
                         return (
-                            <Link href={outcome.route}>
-                                <Panel key={outcomeIdx}>
+                            <Link href={{ pathname: '/LearningOutcome', query: { lo_index: outcome.lo_index, project_index: outcome.project_index } }} key={outcomeIdx}>
+                                <Panel>
                                     <div className={'rounded-lg w-full overflow-hidden'}>
                                         <img className={'w-full h-40'} src={outcome?.image} alt=""/>
                                     </div>

@@ -9,7 +9,7 @@ const LearningOutcomesConfig = {
             project_index: 1,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consequatur consequuntur dignissimos, excepturi facilis hic ipsa, iure neque nihil nisi odio provident quam quis rem reprehenderit similique tempore totam.',
             image: {image},
-            route: '',
+            route: '/LearningOutcome',
         },
         {
             title: 'test',
@@ -18,7 +18,7 @@ const LearningOutcomesConfig = {
             project_index: 1,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consequatur consequuntur dignissimos, excepturi facilis hic ipsa, iure neque nihil nisi odio provident quam quis rem reprehenderit similique tempore totam.',
             image: {image},
-            route: '',
+            route: '/LearningOutcome',
         },
         {
             title: 'test',
@@ -27,7 +27,7 @@ const LearningOutcomesConfig = {
             project_index: 2,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consequatur consequuntur dignissimos, excepturi facilis hic ipsa, iure neque nihil nisi odio provident quam quis rem reprehenderit similique tempore totam.',
             image: {image},
-            route: '',
+            route: '/LearningOutcome',
         },
     ],
 };
