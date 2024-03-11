@@ -1,4 +1,4 @@
-// File: /Users/Maike/PhpstormProjects/Semester_7/src/app/layout.js
+// File: /Users/Maike/PhpstormProjects/Semester_7/src/app/layout.jsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
