@@ -24,7 +24,7 @@ const LearningOutcomes = () => {
                                     </div>
 
                                     <div className={'flex justify-between gap-2 w-full items-center'}>
-                                        <h1 className={'text-2xl '}>{outcome?.title}</h1>
+                                        <h1 className={'text-2xl font-semibold'}>{outcome?.title}</h1>
 
                                         <p className={'text-orange-500'}>{outcome?.sub_title}</p>
                                     </div>
